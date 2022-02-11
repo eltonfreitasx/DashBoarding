@@ -1,12 +1,21 @@
-import React from 'react'
+import React from 'react';
+import {Route, Routes } from 'react-router-dom';
+import Globalstyle from './globalstyle';
+
+import Nav from './components/Nav';
+import Home from './components/Home';
 
 
-function App() {
-  return (
+const App = () =>
+
+  (
     <>
-      <h1>HELLO WORLD</h1>
-    </>
-  );
-}
+    <Globalstyle />
+    <Nav />
+    <Routes>
+      <Route exact path='/' element={() => {}}/>
+    </Routes>
+  </>
+)
 
 export default App;
