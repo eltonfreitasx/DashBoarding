@@ -8,4 +8,9 @@
         font-family: 'Sora', sansa-serif;
         box-sizing: border-box;
     }
+
+    body{
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
  `

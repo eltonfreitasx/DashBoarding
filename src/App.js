@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Route, Routes } from 'react-router-dom';
 import Globalstyle from './globalstyle';
 
 import Nav from './components/Nav';
 import Home from './components/Home';
 
+function App(){
 
-const App = () =>
 
-  (
+  return(
     <>
     <Globalstyle />
     <Nav />
@@ -16,6 +16,7 @@ const App = () =>
       <Route exact path='/' element={() => {}}/>
     </Routes>
   </>
-)
+  )
+}
 
 export default App;

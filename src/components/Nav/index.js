@@ -1,59 +1,67 @@
 
-import {Link} from 'react-router-dom'
-import {FaAppleAlt, FaUserFriends, FaSignOutAlt} from 'react-icons/fa'
-import {BiMessageDetail} from 'react-icons/bi'
-import {GrHelp} from 'react-icons/gr'
-import {AiFillSetting, AiFillLock,AiOutlineHome} from 'react-icons/ai'
+import {Link} from 'react-router-dom';
+import {FaAppleAlt, FaUserFriends, FaSignOutAlt} from 'react-icons/fa';
+import {BiMessageDetail} from 'react-icons/bi';
+import {IoMdHelp} from 'react-icons/io';
+import {AiFillSetting, AiFillLock,AiOutlineHome} from 'react-icons/ai';
 
-import { Navigation } from './navstyle';
+import { Header } from './navstyle';
 const Nav = ()=>(
     <>
-        <header>
-            <Navigation>
+        <Header>
+            <nav>
                 <ul>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<FaAppleAlt/></span>
-                        <span>title  BRAND NAME</span>
+                        <Link to="/">
+                        <span><FaAppleAlt/></span>
+                        <span>BRAND NAME</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<AiOutlineHome/></span>
-                        <span>title  Dashboard</span>
+                        <Link to="/">
+                        <span><AiOutlineHome/></span>
+                        <span>Dashboard</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<FaUserFriends/></span>
-                        <span>title  Customers</span>
+                        <Link to="/">
+                        <span><FaUserFriends/></span>
+                        <span>Customers</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<BiMessageDetail/></span>
-                        <span>title  Message</span>
+                        <Link to="/">
+                        <span><BiMessageDetail/></span>
+                        <span>Message</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<GrHelp/></span>
-                        <span>title  Help</span>
+                        <Link to="/">
+                        <span><IoMdHelp/></span>
+                        <span>Help</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<AiFillSetting/></span>
-                        <span>title  Settings</span>
+                        <Link to="/">
+                        <span><AiFillSetting/></span>
+                        <span>Settings</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<AiFillLock/></span>
-                        <span>title  Password</span>
+                        <Link to="/">
+                        <span><AiFillLock/></span>
+                        <span>Password</span>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/"/>
-                        <span>icons<FaSignOutAlt/></span>
-                        <span>title  Sign Out</span>
+                        <Link to="/">
+                        <span><FaSignOutAlt/></span>
+                        <span>Sign Out</span>
+                        </Link>
                     </li>
                 </ul>
-            </Navigation>
-        </header>
+            </nav>
+        </Header>
     </>
 )
 
